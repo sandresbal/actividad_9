@@ -1,0 +1,12 @@
+.contact{
+    padding-bottom: 30px;
+}
+
+.contact>.display-4{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.photo{
+    max-width: 200px;
+}
