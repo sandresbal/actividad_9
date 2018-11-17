@@ -44,6 +44,10 @@
     padding-bottom: 30px;
 }
 
+.carousel .testimonial {
+    padding: 0 !important;
+    position: relative;
+}
 
 .photo{
     max-width: 200px;
