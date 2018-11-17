@@ -15,6 +15,25 @@
     <!--Custom-->
     <link rel="stylesheet" href="css/custom.css" type="text/css">
 
+    <!--Favicons created using https://www.favicon-generator.org/-->
+    <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="./icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Actividad 9</title>
 </head>
 
@@ -26,7 +45,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png"></a>
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo-small.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,18 +67,35 @@
         </div>
     </nav>
 
-
-    <img src="./img/mantel.png" class="img-fluid" alt="Main image">
+    <img src="./img/mantel.png" class="img-fluid paralax" alt="Main image">
 
     <div class="jumbotron centered">
         <div class="h1">Meet FAPP</div>
         <div class="lead jumbo">Fuck**ng Awesome App is the best option for people like you:<br>
             We are everything you were expecting</div>
-        <button class="btn btn-primary">Tell me more</button>
+        <a href="#featurette" class="btn btn-primary" role="button">Tell me more</a>
+    </div>
+
+    <div class="container feat-icons">
+        <div class="row">
+            <div class="col feat">
+                <i class="fas fa-shipping-fast fa-7x"></i>
+                <h5>Faster</h5>
+            </div>
+            <div class="col feat">
+                <i class="fas fa-arrows-alt fa-7x"></i>
+                <h5>Higher</h5>
+            </div>
+            <div class="col feat">
+                <i class="fas fa-dumbbell fa-7x"></i>
+                <h5>Stronger</h5>
+            </div>
+        </div>
+
     </div>
 
     <!-- FEATURETTES inspirado en bootstrap examples -->
-    <div class="container">
+    <div class="container" id="featurette">
         <hr class="divider">
 
         <div class="row featurette">
@@ -68,7 +104,7 @@
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <img class="featurette-image img-fluid mx-auto" src="./img/surprise-1.jpg" alt="Generic placeholder image">
             </div>
         </div>
 
@@ -80,7 +116,7 @@
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <img class="featurette-image img-fluid mx-auto" src="./img/surprised-2.jpeg" alt="Generic placeholder image">
             </div>
         </div>
 
@@ -88,13 +124,13 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                <h2 class="featurette-heading">FAPP made Zuckelberg look like this</h2>
                 <p class="lead">
 
                     Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <img class="featurette-image img-fluid mx-auto" src="./img/zuckelberg.jpg" alt="Generic placeholder image">
             </div>
         </div>
 
@@ -102,45 +138,99 @@
 
 
     </div>
+
     <!-- /END THE FEATURETTES -->
 
     <!-- Carousel reviews -->
 
     <div class="container reviews">
-
-        <div id="carouselExampleIndicators only-text" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <!--<img class="d-block w-100" src="..." alt="First slide">-->
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>FAPP saved my life</h5>
-                        <p>I was about to fall into a depression but FAPP saved me</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Genuine customer reviews of FAPP:</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <a href="#">
+                                                <img src="./img/generic-person.gif" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p>Lorem ipsum dolor sit amet, consec adipiscing elit. </p>
+                                                <p class="overview"><b>Paco Paco Paco</b>, Media Analyst</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <a href="#">
+                                                <img src="./img/generic-person2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p>Vestibulum quis quam ut magna consequat faucibus. </p>
+                                                <p class="overview"><b>Rosa Diez</b>, Retired</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <a href="#">
+                                                <img src="./img/generic-person3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p>Lorem ipsum dolor sit amet, consec adipiscing elit. </p>
+                                                <p class="overview"><b>Francisco Alegre Yolé</b>, Seo Analyst</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <a href="#">
+                                                <img src="./img/generic-person4.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="testimonial">
+                                                <p>Vestibulum quis quam ut magna consequat faucibus. </p>
+                                                <p class="overview"><b>Pinta Ycolorea </b>, Web Designer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <!--<img class="d-block w-100" src="..." alt="Second slide">-->
-                </div>
-                <div class="carousel-item">
-                    <!--<img class="d-block w-100" src="..." alt="Third slide">-->
-                </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-
     </div>
 
+    <div class="container centered">
+            <a href="./contact.html" class="btn btn-primary" role="button">Say hello!</a>
+
+    </div>
 </body>
 
 </html>
