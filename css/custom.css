@@ -1,3 +1,7 @@
+.img-fluid{
+     width: 100% \9
+}
+
 .contact{
     padding-bottom: 30px;
 }
@@ -9,4 +13,27 @@
 
 .photo{
     max-width: 200px;
+}
+
+.centered{
+    text-align: center;
+    background-color: white;
+}
+
+.jumbo{
+    padding-bottom: 30px;
+}
+
+.only-text {
+    min-height: 200px !important;
+}
+
+.team {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.reviews {
+    min-height: 300px;
+    background-color: aliceblue;
 }
